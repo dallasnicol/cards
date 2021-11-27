@@ -1,0 +1,9 @@
+<div class="wrapper vh-100 p-3">
+  <h3>Users</h3>
+  <div class="row" *ngIf="users">
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3" *ngFor="let user of users">
+      <app-card [user]="user"></app-card>
+    </div>
+  </div>
+  <div *ngIf="!users">Loading...</div>
+</div>

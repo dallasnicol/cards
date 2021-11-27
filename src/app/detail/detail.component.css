@@ -1,0 +1,11 @@
+.detail-wrapper {
+  text-align: left;
+  background-color: lightgray;
+}
+.detail-card {
+  height: 250px;
+  border: 1px solid gray;
+}
+.detail-card img {
+  object-fit: cover;
+}

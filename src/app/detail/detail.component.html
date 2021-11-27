@@ -1,0 +1,13 @@
+<div class="detail-wrapper vh-100" >
+  <div *ngIf="user">
+    <h3 class="p-3">Details for {{user.first_name}}</h3>
+    <div class="detail-card d-flex justify-content-between mx-3 my-0">
+      <img class="avatar w-50 p-0" src="{{user.avatar}}" />
+      <div class="info w-50 py-5 px-2 bg-white">
+        <h3>{{user.first_name}} {{user.last_name}}</h3>
+        <span>{{user.email}}</span>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!user">Loading...</div>
+</div>
