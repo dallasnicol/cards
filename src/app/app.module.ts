@@ -9,6 +9,7 @@ import { DetailComponent } from './detail/detail.component';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { MatIconModule } from '@angular/material/icon';
     HttpClientModule,
     NoopAnimationsModule,
     MatIconModule,
+    RouterModule,
   ],
   providers: [HttpClient],
   bootstrap: [AppComponent],
